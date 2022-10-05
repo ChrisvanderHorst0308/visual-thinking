@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Visual Thinking Intro</title>
+    <link rel="stylesheet" href="../style.css" />
+    <style>
+      
+      body {
+        display: grid;
+        gap: 10px;
+        grid-template-columns: 2fr         2fr;
+        grid-template-rows: 1fr 2fr 8fr 1fr;
+
+
+
+        /* grid-template-columns: 2fr 2fr 8fr 2fr;
+        grid-template-rows: 1fr 1fr 8fr 1fr;
+        grid-template-areas:
+        'h h n'
+        '. m .'
+        '. c1 c2 c3.'
+        'f f f' */
+
+        ;
+        }
+
+        main {
+        grid-area: m;
+      }
+
+      header {
+        grid-area: h;
+      }
+
+      content1 {
+        grid-area: c1;
+      }
+
+      content2 {
+        grid-area: c2;
+      
+      }
+
+      content3 {
+        grid-area: c3;
+      }
+
+      footer {
+        grid-area: f;
+      }
+
+      nav {
+        grid-area: n;
+      }
+    </style>
+  </head>
+  <body id="Visual Thinking Intro">
+    <header><h1>Visual Thinking Intro</h1></header>
+    <nav>nav</nav>
+    <main>main</main>
+    <footer>footer</footer>
+  </body>
+</html>
