@@ -8,25 +8,64 @@
     min-height: 100vh;
     font-family: sans-serif;
   }
+
+  
   body > * {
     min-height: 1em;
   }
   header {
-    background: cyan;
+   
+    border-bottom-style: solid;
+    
+
+
+   
+    
   }
-  header > h1 {
+  header > h4 {
+    
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    margin: 0;
+ 
+    
+   
+
   }
+
+
+  header > button {
+    float: right;
+  padding: 6px 10px;
+  margin-top: 8px;
+  margin-right: 16px;
+  }
+
+
   nav {
-    background: magenta;
+
+    border-bottom-style: solid;
+    
+    
+    
   }
+
   main {
-    background: yellow;
+    
+    border-style: solid;
+
+  }
+
+  section {
+    background: rgb(30, 255, 0);
+  }
+
+  content2 {
+    background: blueviolet ;
+  }
+
+  content3 {
+    background: orange;
   }
   footer {
-    background: black;
-    color: white;
-    
+    border-top-style: solid;
   }
   
