@@ -13,56 +13,182 @@
   body > * {
     min-height: 1em;
   }
+  /* ----------grid layout--------------------- */
+  body {
+    display :grid;
+    row-gap: 10px;
+    grid-template-columns: 1.5fr 4fr 4fr 1.5fr;
+    grid-template-rows: 0.3fr 0.3fr 5fr 5fr 0.4fr;
+    grid-template-areas:
+    'h h h h'
+    'n n n n'
+    '. m m .'
+    '. m m .'
+    'f f f f'
+    ;
+
+  }  
+
+/* --------------HEADER----------------------- */
   header {
    
-    border-bottom-style: solid;
-    
-
-
-   
-    
+    /* border-bottom-style: solid; */
+    grid-area: h;
+    display: grid;
+    justify-content: left;
+    align-content: center;
+    grid-auto-flow: column;
+      
   }
+
   header > h4 {
-    
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
- 
-    
-   
+    position:relative;
+    font-family: "Rigid Square";
+    color: rgb(14, 14, 174);
+    font-weight: 700;
+    margin: 2em;
+      
 
   }
 
 
-  header > button {
+  header > a {
+    position:relative;
+    font-family: "Rigid Square";
+    color:  rgb(14, 14, 174);
+    font-weight: 700;
+    margin: 2em;
+    
+
+
+  
+    /* right: 0;
+    margin: 20px; */
+
+
+  
    
   }
 
+  header > p {
+    color: white;
+  }
 
+  header > img {
+    align-self: center;
+
+  }
+
+  
+
+/* ----------------------NAV--------------------------------- */
   nav {
-
+    grid-area: n;
     border-bottom-style: solid;
+    border-top-style: solid;
+    border-width: 1.5px;
+    border-color: rgb(112, 112, 112);
+
+
+    display: grid;
+    justify-content: left;
+    align-content: center;
+    grid-auto-flow: column;
+    gap: 0.5em;
     
     
+
+
+
+
+     }
+
+
+  nav > div {
+    display: grid;
+    align-content: center;
+    grid-auto-flow: column;
+   
     
   }
+
+  
+
+  nav > p {
+    /* display: inline-block; */
+    /* align-self: auto; */
+    
+    display: grid;
+    justify-content: center;
+    opacity: 20%;
+   
+   
+  }
+
+/* ---------------------------MAIN---------------------------- */
 
   main {
+  
+
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(20fr,20fr));
+    margin: 3em;
+    justify-content: center;
+    align-content: center;
+    row-gap: 2em;
+
+
     
-    border-style: solid;
+    grid-area: m;
 
   }
 
-  section {
-    background: rgb(30, 255, 0);
+  /* /////////opmaak content main///////////////// */
+
+
+  main > div {
+    padding: 2em;
+    border-radius: 0.3em;
+    box-shadow: 10px 10px 20px rgb(0, 0, 0, 0.3);
+
+
+     
   }
 
-  content2 {
-    background: blueviolet ;
-  }
 
-  content3 {
-    background: orange;
-  }
+
+
+.content1 > p {
+  color: rgb(14, 14, 174);
+
+    
+}
+
+.content1 > a {
+  color: rgb(57, 57, 57);
+  font-family: BOLD;
+}
+
+.content2 > p {
+  color:  rgb(14, 14, 174);
+}
+
+  
+
+ 
+
+
+/* -------------------------conten1------------------------------ */
+
+
+
+
+ /*-----------------------FOOTER------------------------------- */
+
+  
   footer {
     border-top-style: solid;
+    grid-area: f;
   }
   
