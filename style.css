@@ -16,15 +16,16 @@
   /* ----------grid layout--------------------- */
   body {
     display :grid;
-    row-gap: 10px;
-    grid-template-columns: 1.5fr 4fr 4fr 1.5fr;
-    grid-template-rows: 0.3fr 0.3fr 5fr 5fr 0.4fr;
+    row-gap: 5px;
+    grid-template-columns: 4fr 2.9fr 4fr;
+    grid-template-rows: 0.3fr 0.2fr 2fr 5fr 5fr 0.4fr;
     grid-template-areas:
-    'h h h h'
-    'n n n n'
-    '. m m .'
-    '. m m .'
-    'f f f f'
+    'h h h'
+    'n n n'
+    '. t .'
+    '. m .'
+    '. m .'
+    'f f f'
     ;
 
   }  
@@ -96,12 +97,7 @@
     grid-auto-flow: column;
     gap: 0.5em;
     
-    
-
-
-
-
-     }
+    }
 
 
   nav > div {
@@ -133,53 +129,107 @@
     display: grid;
     grid-gap: 20px;
     grid-template-columns: repeat(auto-fit, minmax(20fr,20fr));
-    margin: 3em;
-    justify-content: center;
-    align-content: center;
+    margin: 0.5em;
+    margin-top: 1em;
     row-gap: 2em;
+    place-content: baseline;
 
-
-    
     grid-area: m;
 
+  }
+/* ///////////top image////////////////// */
+  
+.topimage {
+  margin-top: 4em;
+  grid-area: t;
+  text-align: center;
+  
+  
+  
+}
+
+.topimage > img {  
+  
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0.5em;
+   }
+
+  .topimage > h4 {
+    color: black;
+    
   }
 
   /* /////////opmaak content main///////////////// */
 
 
   main > div {
-    padding: 2em;
+    padding: 1em;
+    position: relative;
     border-radius: 0.3em;
     box-shadow: 10px 10px 20px rgb(0, 0, 0, 0.3);
-
-
-     
+  
   }
 
 
 
-
+/* --------------------------------------- */
 .content1 > p {
   color: rgb(14, 14, 174);
-
-    
+  text-align: center; 
 }
 
 .content1 > a {
   color: rgb(57, 57, 57);
-  font-family: BOLD;
+  font-size: 0.6em;
 }
 
+.content1 > img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0.5em;
+}
+
+/* ----------------------------------------- */
 .content2 > p {
   color:  rgb(14, 14, 174);
+  text-align: center;
 }
 
+.content2 > a {
+  color: rgb(57, 57, 57);
+  font-size: 0.6em;
+}
+
+.content2 > i {
+  font-size: 0.6em;
+}
+
+ /*-------------------------------------------  */
+
+ .content3 > p {
+  color:  rgb(14, 14, 174);
+  text-align: center;
   
+ }
+
+ .content3 > a {
+  color: rgb(57, 57, 57);
+  font-size: 0.6em;
+ }
+
+ .content3 > div {
+  position: absolute;
+  bottom: 0;
+  right: -11em;
+  width: 10em;
+ }
 
  
+ 
 
-
-/* -------------------------conten1------------------------------ */
 
 
 
@@ -187,8 +237,8 @@
  /*-----------------------FOOTER------------------------------- */
 
   
-  footer {
+  /* footer {
     border-top-style: solid;
     grid-area: f;
-  }
+  } */
   
