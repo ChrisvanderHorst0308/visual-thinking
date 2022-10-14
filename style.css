@@ -18,7 +18,7 @@
     display :grid;
     row-gap: 5px;
     grid-template-columns: 4fr 2.9fr 4fr;
-    grid-template-rows: 0.3fr 0.2fr 2fr 5fr 5fr 0.4fr;
+    grid-template-rows: 0.3fr 0.2fr 2fr 5fr 5fr 1.5fr;
     grid-template-areas:
     'h h h'
     'n n n'
@@ -168,7 +168,7 @@
     padding: 1em;
     position: relative;
     border-radius: 0.3em;
-    box-shadow: 10px 10px 20px rgb(0, 0, 0, 0.3);
+   
   
   }
 
@@ -207,6 +207,13 @@
   font-size: 0.6em;
 }
 
+.content2 > div {
+  position: absolute;
+  top: 0;
+  left: -15em;
+
+}
+
  /*-------------------------------------------  */
 
  .content3 > p {
@@ -222,7 +229,7 @@
 
  .content3 > div {
   position: absolute;
-  bottom: 0;
+  top: 3.1em;
   right: -11em;
   width: 10em;
  }
