@@ -83,10 +83,9 @@ h6 {
 }
 
   /* --------------------Logo----------------------  */
-.Logo > img {
-  height: -webkit-fill-available;
 
-}
+
+
 
 
 /* --------------HEADER----------------------- */
@@ -99,7 +98,7 @@ header {
   flex-direction: row-reverse;
   align-items: center;
   column-gap: 2em;
-  margin-right: 2em ;
+ 
   
   
   
@@ -188,7 +187,9 @@ font-family: inherit;
     justify-content: center;
     text-align: center;
     margin: 2em;
-   
+
+
+
     
   
     /* justify-items: center;
@@ -214,16 +215,38 @@ font-family: inherit;
   }
 
 
-  .step1 {
+  .step1, .step2, .step3 {
+    color: white;
+    background-color: #090940;
+    width: 95vw;
+    padding-top: 2em;
+  }
+
+   /* {
     color: white;
     background-color: #090940;
     padding-left: 3em;
     padding-right: 3em;
-   
     padding-top: 2em;
+  } */
 
-    
+
+  .nextButton {
    
+    bottom: 13%;
+    right: 5%;
+    font-size: 1em;
+    position: absolute;
+    box-shadow: 0px 0px 0px 2px var(--white) inset;
+    background: transparent;
+    background-color: aliceblue;
+  }
+
+  .nextButton:hover { 
+    background-position: right center;
+    transform: scale(1.05);
+    opacity: 0.9;
+    
   }
 
 
@@ -231,7 +254,7 @@ font-family: inherit;
 /* ///////////top image////////////////// */
   
 .topimage {
-  margin-top: 1em;
+
   text-align: center;
   
   
@@ -245,6 +268,9 @@ font-family: inherit;
   margin-left: auto;
   margin-right: auto;
   padding: 0.5em;
+  height: 11em;
+  margin-top: -1.4em;
+
    }
 
   .topimage > h4 {
@@ -273,9 +299,7 @@ font-family: inherit;
   background-size: 400%;
   transition: 0.2s ease-in;
   cursor: pointer;
-
   background-image: linear-gradient(90deg, var(--orange) 50%, var(--dark-blue) 50%);
-
 }
 
 .startButton:hover {
@@ -284,6 +308,13 @@ font-family: inherit;
   opacity: 0.9;
   color: var(--white);
 }
+
+.startButton > a, .nextButton > a {
+  text-decoration: none;
+}
+
+
+
 
 
 
