@@ -18,6 +18,7 @@
     min-height: 100vh;
     font-family: var(--broodtekst);
     color: var(--dark-blue);
+    mar
 
   }
 
@@ -84,7 +85,10 @@ h6 {
 
   /* --------------------Logo----------------------  */
 
-
+.Logo {
+  max-height: -webkit-fill-available;
+  margin-left: 2em;
+}
 
 
 
@@ -108,7 +112,8 @@ header {
 .topheader {
 color:rgb(14, 14, 174);
 font-family: inherit;
-
+max-height: -webkit-fill-available;
+    margin-right: 2em;
 }
 
 .topheader > button {
@@ -157,6 +162,8 @@ font-family: inherit;
       flex-direction: row;
   
       align-content: center;
+      max-height: -webkit-fill-available;
+      margin-left: 2em;
  
 
     }
@@ -173,7 +180,22 @@ font-family: inherit;
   z-index: -1;
 }
 
+/* navbar--> progresbar---------------------------- */
 
+.greenProgresBar {
+  background-color: rgb(68, 221, 68);
+  height: 0.3em;
+  
+}
+
+.grayProgresBar {
+  background-color: gray;
+ margin-top: 0.5em;
+ margin-bottom: 0.5em;
+margin-left: 2em;
+margin-right: 2em;
+height: 0.3em;
+}
 
 
   
@@ -182,7 +204,7 @@ font-family: inherit;
 /* ---------------------------MAIN---------------------------- */
 
   main {
-    display: grid;
+    display: flex;
     grid-area: m;
     justify-content: center;
     text-align: center;
@@ -215,33 +237,53 @@ font-family: inherit;
   }
 
 
-  .step1, .step3 {
+  .stap1, .stap8{
     color: white;
     background-color: #090940;
     width: 95vw;
-    padding-top: 2em;
+    padding-top: 3%;
+    height: 20em;
+    overflow: auto;
+    margin-top: -1em;
+  
+    min-width: -webkit-fill-available;
+
+
+    
+
   }
 
 
-  .step2 {
-    border: 2em;
-    border: 3px;
-    border-style: solid;
-    width: 95vw;
+  .stap2, .stap3, .stap4, .stap5, .stap6, .stap7 {
+    
+      border: 10px;
+      border-style: solid;
+      padding-top: 3%;
+      height: 20em;
+    
+      margin-top: -1em;
+
+      min-width: -webkit-fill-available;
+
+
   }
 
+  .stap3 > p {
+    padding-left: 30%;
+    padding-right: 30%;
+    text-align: left;
+  } 
+  
   
 
   .nextButton {
    
-    bottom: 11.6%;
-    right: 2.8%;
+   
     font-size: 1em;
-    position: absolute;
-    box-shadow: 0px 0px 0px 2px var(--white) inset;
     background: transparent;
     background-color: aliceblue;
-  }
+}
+  
 
   .nextButton:hover { 
     background-position: right center;
