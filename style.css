@@ -215,26 +215,27 @@ font-family: inherit;
   }
 
 
-  .step1, .step2, .step3 {
+  .step1, .step3 {
     color: white;
     background-color: #090940;
     width: 95vw;
     padding-top: 2em;
   }
 
-   /* {
-    color: white;
-    background-color: #090940;
-    padding-left: 3em;
-    padding-right: 3em;
-    padding-top: 2em;
-  } */
 
+  .step2 {
+    border: 2em;
+    border: 3px;
+    border-style: solid;
+    width: 95vw;
+  }
+
+  
 
   .nextButton {
    
-    bottom: 13%;
-    right: 5%;
+    bottom: 11.6%;
+    right: 2.8%;
     font-size: 1em;
     position: absolute;
     box-shadow: 0px 0px 0px 2px var(--white) inset;
