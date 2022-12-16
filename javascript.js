@@ -6,7 +6,7 @@ let plusProgress =
 
 nextButton.addEventListener('click', () => {
     let slideWidth = slide.clientWidth;
-
+    
   slidesContainer.scrollLeft += slideWidth;
 });
 
