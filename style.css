@@ -210,7 +210,7 @@ height: 0.3em;
     justify-content: center;
     text-align: center;
     margin: 2em; 
-    margin-top: -0.1em;
+    /* margin-top: 1em; */
   }
 
 
@@ -220,6 +220,7 @@ height: 0.3em;
     margin: 1rem;
     position: relative;
     overflow: hidden;
+    margin-top: -1em;
   }
   
   .slides-container {
@@ -284,80 +285,31 @@ height: 0.3em;
     border-width: 3px;
     border-style: solid;
   }
+
+  
   
   .slide:nth-child(3) {
     border-width: 3px;
-    /* border-style: solid; */
+    border-style: solid;
     border-left-style: solid;
   }
   
   .slide:nth-child(4) {
-    background-color: #da6f2b;
-  }
+    border-width: 3px;
+    border-style: solid;
+    border-left-style: solid;  }
 
   .slide:nth-child(5) {
-    background-color: aqua;
-  }
+    border-width: 3px;
+    border-style: solid;
+    border-left-style: solid;  }
 
 
   .slide:nth-child(6) {
-    background-color: rgb(115, 0, 231);
-  }
+    border-width: 3px;
+    border-style: solid;
+    border-left-style: solid;  }
 
-  /* .stap1, .stap8{
-    color: white;
-    background-color: #090940;
-    width: 95vw;
-    padding-top: 3%;
-    height: 20em;
-    overflow: auto;
-    margin-top: -1em;
-  
-    min-width: -webkit-fill-available;
-
-
-    
-
-  }
-
-
-  .stap2, .stap3, .stap4, .stap5, .stap6, .stap7 {
-    
-      border: 10px;
-      border-style: solid;
-      padding-top: 3%;
-      height: 20em;
-    
-      margin-top: -1em;
-
-      min-width: -webkit-fill-available;
-
-
-  }
-
-  .stap3 > p {
-    padding-left: 30%;
-    padding-right: 30%;
-    text-align: left;
-  } 
-  
-  
-
-  .nextButton {
-   
-   
-    font-size: 1em;
-    background: transparent;
-    background-color: aliceblue;
-}
-  
-
-  .nextButton:hover { 
-    background-position: right center;
-    transform: scale(1.05);
-    opacity: 0.9;
-    
-  } */
 
 
 
